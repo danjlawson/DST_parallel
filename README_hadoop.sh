@@ -13,7 +13,7 @@ wget http://mirror.ox.ac.uk/sites/rsync.apache.org/hadoop/common/hadoop-3.1.3/ha
 tar -xzvf hadoop-3.1.3.tar.gz
 
 ## NEED mapping files and so on from the tutorial
-cp -r /vagrant/21/* .
+cp -r /vagrant/* .
 
 ## To run Map/Reduce locally
 ./map.py < test.log | sort | ./reduce.py
