@@ -4,6 +4,8 @@ In this session we create a parallel processing architecture that everyone can u
 
 The process that we are using will translate almost directly into BlueCrystal. It will also work on any commercial computer. The important reason to run things in the scripts as we do here, and not e.g. in a notebook, is that we can then genuinely scale the analysis up by moving it to a parallel architecture. You can have a jupyter notebook connect to a parallel backend via YARN but this is an engineering challenge to set up.
 
+It is hoped that this repository is helpful and can be kept up-to-date. Please report all bugs to [Daniel Lawson at Bristol](mailto:dan.lawson@bristol.ac.uk).
+
 ## Overview and sources
 
 We will use two tools to create our environment:
@@ -26,6 +28,7 @@ You will need to install both of these pieces of software for your normal operat
 
 * There are some interactive components of the scripts, so do read the comments.
 * Over time, external links may become broken. Please examine the reason why you are sent to the link and check that it 
+* There may be steps that are required, such as the creation of ssh keys, that are impartially described above.
 
 ## Running without VirtualBox
 
@@ -33,4 +36,4 @@ If you are running on linux or mac, there is no requirement to install a virtual
 
 * **JAVA**: You must have java 8 for spark, which is **not** the most recent version (11 at time of writing).
 * **ANACONDA/PYTHON**: You can get pyspark working in several ways, including via jupyter notebooks, as well as using pip. Doing this could be non-trivial.
-* **VIRTUAL MACHINE PROVISIONING**: You can give your virtual machine more memory, more CPUs etc by editing the Vagrantfile.
+* **VIRTUAL MACHINE PROVISIONING**: You can give your virtual machine more memory, more CPUs etc by editing the Vagrantfile. See the [Vagrant documentation](https://www.vagrantup.com/docs/index.html) for details.
