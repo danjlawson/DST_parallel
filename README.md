@@ -9,7 +9,7 @@ The process that we are using will translate almost directly into BlueCrystal. I
 We will use two tools to create our environment:
 
 * [VirtualBox](https://www.virtualbox.org/) : VirtualBox allows you to install an operating system as "software" on your computer as a "Virtual Machine". By doing this, we will all have the exact same version of Ubuntu on our computers.
-* [Vagrant](www.vagrantup.com) : Vagrant allows us to script the creation of Virtual Machines so that we can all guarantee having the same setup, without having too much interactive installation etc to remember. It uses VirtualBox to create the virtual machine.
+* [Vagrant](https://www.vagrantup.com/) : Vagrant allows us to script the creation of Virtual Machines so that we can all guarantee having the same setup, without having too much interactive installation etc to remember. It uses VirtualBox to create the virtual machine.
 
 You will need to install both of these pieces of software for your normal operating system to proceed.
 
