@@ -16,7 +16,7 @@ You will need to install both of these pieces of software for your normal operat
 ## Getting started
 
 1. **GET THIS CODE**: Download [DST_parallel](https://github.com/danjlawson/DST_parallel), either as a git repostiory using ``git clone`` or as a zip file. Unzip it into a new directory.
-2. **GET THE SOFTWARE**: Download [VirtualBox](https://www.virtualbox.org/) and  [Vagrant](https://www.vagrantup.com) .  You don't actually have to run VirtualBox yourself, though you can if you want to get a graphical display. Ensure that it runs and close it. Take a look at the [Vagrant Getting Started](https://www.vagrantup.com/intro/getting-started/).
+2. **GET THE SOFTWARE**: Download [VirtualBox](https://www.virtualbox.org/) and  [Vagrant](https://www.vagrantup.com/) .  You don't actually have to run VirtualBox yourself, though you can if you want to get a graphical display. Ensure that it runs and close it. Take a look at the [Vagrant Getting Started](https://www.vagrantup.com/intro/getting-started/).
 3. **CREATE YOUR BOX**: Run ``vagrant up`` in the directory you downloaded things into. Look at the [Vagrantfile](Vagrantfile). This tells Vagrant what type of operating system we want. You are getting Ubuntu. It also calls [bootstrap.sh](bootstrap.sh) which will be used the first time that you create this virtual computer.
 4. **SSH TO YOUR BOX**: Run ``vagrant ssh`` to get into the new box.
 5. **HADOOP**: Follow the instructions in [README_hadoop.sh](README_hadoop.sh). These should be pasted one-by-one into the console of your vagrant box, and try to understand them as you go.
