@@ -24,7 +24,7 @@ You will need to install both of these pieces of software for your normal operat
 3. **CREATE YOUR BOX**: Run ``vagrant up`` in the directory you downloaded things into. Look at the [Vagrantfile](Vagrantfile). This tells Vagrant what type of operating system we want. You are getting Ubuntu. It also calls [bootstrap.sh](bootstrap.sh) which will be used the first time that you create this virtual computer.
 4. **SSH TO YOUR BOX**: Run ``vagrant ssh`` to get into the new box.
 5. **HADOOP**: Follow the instructions in [README_hadoop.sh](README_hadoop.sh). These should be pasted one-by-one into the console of your vagrant box, and try to understand them as you go.
-6. **PYSPARK**: Follow the instructions in [README_hadoop.sh](README_pyspark.sh). These should be pasted one-by-one into the console of your vagrant box, and try to understand them as you go. Note that it assumes that you have already run [README_hadoop.sh](README_hadoop.sh).
+6. **PYSPARK**: Follow the instructions in [README_pyspark.sh](README_pyspark.sh). These should be pasted one-by-one into the console of your vagrant box, and try to understand them as you go. Note that it assumes that you have already run [README_hadoop.sh](README_hadoop.sh).
 
 ## Comments
 
@@ -39,3 +39,15 @@ If you are running on linux or mac, there is no requirement to install a virtual
 * **JAVA**: You must have java 8 for spark, which is **not** the most recent version (11 at time of writing).
 * **ANACONDA/PYTHON**: You can get pyspark working in several ways, including via Jupyter notebooks, as well as using pip. Doing this could be non-trivial.
 * **VIRTUAL MACHINE PROVISIONING**: You can give your virtual machine more memory, more CPUs etc by editing the Vagrantfile. See the [Vagrant documentation](https://www.vagrantup.com/docs/index.html) for details.
+
+## Links
+
+Hadoop content is adapted from
+http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Standalone_Operation,
+https://www.linuxjournal.com/content/introduction-mapreduce-hadoop-linux,
+https://examples.javacodegeeks.com/enterprise-java/apache-hadoop/hadoop-streaming-example/,
+and https://dzone.com/articles/local-hadoop-on-laptop-for-practice .
+
+Pyspark content is adapted from
+https://www.tutorialspoint.com/pyspark/pyspark_quick_guide.htm and
+https://spark.apache.org/examples.html.
