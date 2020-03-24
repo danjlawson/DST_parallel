@@ -28,9 +28,6 @@ grep "Lines" pys_firstapp.log
 spark-submit pys_count.py &> pys_count.log
 grep -v INFO pys_count.log | grep -v WARN
 
-spark-submit pys_count.py &> pys_count.log
-grep -v INFO pys_count.log | grep -v WARN
-
 ## Examine the storage type
 spark-submit pys_storagelevel.py &> pys_storagelevel.log
 grep -v INFO pys_storagelevel.log | grep -v WARN

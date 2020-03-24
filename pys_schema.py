@@ -29,17 +29,8 @@ numeric_data = numeric_data1.toPandas()
 
 ## Plotting to a file
 matplotlib.use('Agg')
-axs = pd.scatter_matrix(numeric_data, figsize=(8, 8));
-
-n = len(numeric_data.columns)
-for i in range(n):
-    v = axs[i, 0]
-    v.yaxis.label.set_rotation(0)
-    v.yaxis.label.set_ha('right')
-    v.set_yticks(())
-    h = axs[n-1, i]
-    h.xaxis.label.set_rotation(90)
-    h.set_xticks(())
+from pandas.plotting import scatter_matrix
+axs = scatter_matrix(numeric_data, figsize=(8, 8));
 plt.savefig('banks.png')
 plt.close()
 
