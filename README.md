@@ -1,5 +1,7 @@
 # Parallel processing with HADOOP and PYSPARK
 
+IMPORTANT: [Google Colab has PySpark support](https://colab.research.google.com/github/asifahmed90/pyspark-ML-in-Colab/blob/master/PySpark_Regression_Analysis.ipynb) and therefore may be the best place to work. Try to get the examples running in colab.
+
 ## Intended Learning Outcomes
 
 In this session we create a parallel processing architecture that everyone can use. It is preferable to use the University High Performance Computing infrastructure, but that might be difficult for everyone to access. This is an alternative pipeline that will work on any computer, be it PC, mac, or linux.
@@ -27,7 +29,6 @@ You will need to install both of these pieces of software for your normal operat
 6. **PYSPARK**: Follow the instructions in [README_pyspark.sh](README_pyspark.sh). These should be pasted one-by-one into the console of your vagrant box, and try to understand them as you go. Note that it assumes that you have already run [README_hadoop.sh](README_hadoop.sh).
 
 ## Comments
-
 * There are some interactive components of the scripts, so do read the comments.
 * Over time, external links may become broken. Please examine the reason why you are sent to the link and check that it 
 * There may be steps that are required, such as the creation of ssh keys, that are impartially described above.
